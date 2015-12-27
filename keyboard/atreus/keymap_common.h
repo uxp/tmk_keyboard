@@ -34,6 +34,36 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define ALT(key) ACTION(ACT_MODS, (MOD_LALT << 8) | (key))
 #define GUI(key) ACTION(ACT_MODS, (MOD_LGUI << 8) | (key))
 
+#define KC_EXCLAMATION  ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_1))
+#define KC_ATSYM        ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_2))
+#define KC_HASH         ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_3))
+#define KC_DOLLAR       ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_4))
+#define KC_PERCENT      ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_5))
+#define KC_CARAT        ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_6))
+#define KC_AMPERSAND    ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_7))
+#define KC_ASTERISK     ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_8))
+#define KC_LPAREN       ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_9))
+#define KC_RPAREN       ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_0))
+#define KC_RCURLYBRACE  ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_RBRACKET))
+#define KC_LCURLYBRACE  ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_LBRACKET))
+#define KC_VERTBAR      ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_BSLASH))
+#define KC_TILDE        ACTION(ACT_MODS, (MOD_LSFT << 8) | (KC_GRAVE))
+
+#define KC_EXCL KC_EXCLAMATION
+#define KC_AT   KC_ATSYM
+#define KC_DOLR KC_DOLLAR
+#define KC_PERC KC_PERCENT
+#define KC_CAR  KC_CARAT
+#define KC_AMPR KC_AMPERSAND
+#define KC_ASTR KC_ASTERISK
+#define KC_LPAR KC_LPAREN
+#define KC_RPAR KC_LPAREN
+#define KC_RCBR KC_RCURLYBRACE
+#define KC_LCBR KC_LCURLYBRACE
+#define KC_VBAR KC_VERTBAR
+#define KC_TILD KC_TILDE
+
+
 extern const uint16_t keymaps[][MATRIX_ROWS][MATRIX_COLS];
 extern const uint16_t fn_actions[];
 
