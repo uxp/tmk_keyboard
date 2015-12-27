@@ -1,12 +1,11 @@
 #include "keymap_common.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
-  /* 0: mostly letters */
-  KEYMAP(KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U, KC_I, KC_O, KC_P, \
-         KC_A, KC_S, KC_D, KC_F, KC_G, KC_H, KC_J, KC_K, KC_L, KC_SCLN, \
-         KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, \
-         KC_ESC, KC_TAB, KC_LGUI, KC_LSFT, KC_BSPC, KC_LCTL, KC_LALT,     \
-         KC_SPC, KC_FN0, KC_MINS, KC_QUOT, KC_ENT),                     \
+	KEYMAP(
+      Q,   W,   E,   R,   T,         Y,   U,   I,   O,   P,
+     A,   S,   D,   F,   G,           H,   J,   K,   L,SCLN,
+    Z,   X,   C,   V,   B,             N,   M,COMM, DOT,SLSH,
+  ESC, TAB,LGUI,LSFT,BSPS,LCTL,LALT, SPC, FN0,MINS,QUOT, ENT),
   /* 1: punctuation and numbers */
   FN_LAYER,                                     \
   /* 2: arrows and function keys */
